@@ -1,0 +1,21 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.saveAs(pathName='C:/Users/mofid/Downloads/steel_members.cae')
+mdb.jobs['Job-1-1']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 9, 'jobName': 'Job-1-1'})
+mdb.jobs['Job-1-1']._Message(STATUS, {'totalTime': 0.502578125, 'attempts': 1, 
+    'timeIncrement': 0.170859375, 'increment': 9, 'stepTime': 0.502578125, 
+    'step': 1, 'jobName': 'Job-1-1', 'severe': 1, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 0})
